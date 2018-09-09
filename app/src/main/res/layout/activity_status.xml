@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity">
+
+    <include
+        android:id="@+id/status_app_bar_layout"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/status_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/status_edit_text"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/neuzietregular"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:hint="@string/how_s_you_feeling" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:background="@drawable/button_bg"
+        android:id="@+id/set_status_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="@font/neuzietregular"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/status_edit_layout"
+        android:layout_margin="20dp"
+        android:text="Set Status"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

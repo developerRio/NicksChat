@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/round_chat_black_24dp"
+        android:id="@+id/bottom_chat_tab"
+        android:title="@string/chats" />
+
+    <item
+        android:icon="@drawable/round_person_add_black_24dp"
+        android:id="@+id/bottom_request_tab"
+        android:title="@string/requests" />
+
+    <item
+        android:icon="@drawable/round_group_black_24dp"
+        android:id="@+id/bottom_friends_tab"
+        android:title="@string/friends" />
+
+</menu>

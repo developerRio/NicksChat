@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.BottomNavigation">
+        <item name="colorPrimary">@color/active</item>
+        <item name="colorAccent">@color/active</item>
+        <item name="android:fontFamily">@font/neuzeitbook</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

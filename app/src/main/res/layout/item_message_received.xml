@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rx_message_image_user"
+        android:layout_width="32dp"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/default_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rx_message_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/rx_message_image_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rx_message_texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/chat_bubble"
+        android:maxWidth="240dp"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:elevation="5dp"
+        android:text=""
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@+id/rx_message_image_user"
+        app:layout_constraintTop_toBottomOf="@+id/rx_message_user_name" />
+
+    <TextView
+        android:id="@+id/rx_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text=""
+        android:textSize="12sp"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rx_message_texts"
+        app:layout_constraintLeft_toRightOf="@+id/rx_message_texts" />
+
+    <ImageView
+        android:id="@+id/rx_message_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/rx_message_texts"
+        android:layout_below="@+id/rx_message_texts"
+        android:layout_marginStart="0dp"
+        android:padding="0dp"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@+id/rx_message_image_user"
+        app:layout_constraintTop_toBottomOf="@+id/rx_message_texts" />
+
+
+</android.support.constraint.ConstraintLayout>

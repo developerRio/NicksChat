@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    tools:context=".LoginUserActivity">
+
+    <!--TODO : Do design Login stuff-->
+
+    <Button
+        android:id="@+id/buttonLoginGoogle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/card_main_bg"
+        android:drawableStart="@drawable/googleg_standard_color_18"
+        android:fontFamily="@font/neuzietregular"
+        android:textStyle="bold"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="Login with Google"
+        android:textAllCaps="false"
+        android:textColor="#616161"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/buttonLoginGoogle"
+        android:layout_centerHorizontal="true"
+        android:elevation="20dp" />
+
+
+</RelativeLayout>

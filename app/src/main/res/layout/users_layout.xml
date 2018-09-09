@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/users_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:civ_border_color="#000"
+        app:civ_border_width="1dp"
+        android:src="@drawable/default_user" />
+
+    <TextView
+        android:id="@+id/users_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/neuzietregular"
+        android:textStyle="bold"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="13dp"
+        android:text="Chandler Bing"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/users_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/users_name"
+        android:maxLines="1"
+        android:ems="15"
+        android:fontFamily="@font/neuzietregular"
+        android:textStyle="normal"
+        android:layout_below="@+id/users_name"
+        android:layout_marginTop="3dp"
+        android:text="Hey there, I'm using Nicks !"
+        android:textSize="14sp" />
+
+    <TextView
+        android:textSize="13sp"
+        android:id="@+id/users_time"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/users_image"
+        android:text="23:45" />
+
+</RelativeLayout>

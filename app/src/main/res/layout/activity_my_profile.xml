@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:src="@drawable/default_user"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:fontFamily="@font/neuzietregular"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="@string/nicks"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/frame_status"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/user_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/neuzietregular"
+            android:textStyle="normal"
+            android:text="@string/default_status"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/edit_status_button"
+            android:layout_width="30dp"
+            android:layout_gravity="end"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:background="#00000000"
+            android:drawableStart="@drawable/ic_edit_black_24dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="4dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_image_button"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image"
+        android:background="@drawable/circular_bg"
+        android:contentDescription="Change your profile image."
+        android:drawableStart="@drawable/ic_camera_alt_black_24dp"
+        android:padding="7dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="122dp"
+        android:contentDescription="Logout Button"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card_main_bg"
+        android:fontFamily="sans-serif"
+        android:text="@string/logout"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

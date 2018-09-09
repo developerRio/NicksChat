@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="8dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tx_message_texts"
+        android:text=""
+        android:textColor="#121212"
+        android:elevation="5dp"
+        android:background="@drawable/message_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="9dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_message_time"
+        android:text=""
+        android:layout_margin="5dp"
+        android:textColor="#121212"
+        android:elevation="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tx_message_texts"
+        app:layout_constraintRight_toLeftOf="@+id/tx_message_texts" />
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/tx_message_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/tx_message_texts"
+        android:layout_below="@+id/tx_message_texts"
+        android:layout_marginStart="0dp"
+        android:padding="0dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@id/tx_message_texts"
+        app:layout_constraintTop_toBottomOf="@+id/tx_message_texts"
+        android:scaleType="centerCrop" />
+
+
+</android.support.constraint.ConstraintLayout>
